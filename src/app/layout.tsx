@@ -1,3 +1,4 @@
+"use client";
 import './globals.css'
 
 export default function RootLayout({
@@ -12,7 +13,9 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body className="grid place-items-center bg-secondary font-redHat h-screen">
+        {children}
+      </body>
     </html>
   )
 }
